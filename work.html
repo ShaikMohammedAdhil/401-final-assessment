@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VIT</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  nav {
+    background-color: #5e5d5d;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .hero {
+    background-color: #3f3f3f;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .feature {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+</style>
+</head>
+<body>
+
+<header>
+    <img class="logo" src="https://vishnu.edu.in/images/logobig.jpg" height="100" width="100">
+  <h1>Welcome to Vishnu Institute of Technology</h1>
+</header>
+
+<nav>
+  <a href="https://vishnu.edu.in/">Home</a>
+  <a href="https://vishnu.edu.in/Academics.php">Academics</a>
+  <a href="https://vishnu.edu.in/AdmissionDetails.php">Admissions</a>
+  <a href="https://vishnu.edu.in/placements.php">Placements</a>
+</nav>
+
+<section class="hero">
+  <h2>Login to check the results </h2>
+</section>
+
+<div class="container">
+  <section class="features">
+    <div class="feature">
+        <form method="POST" action="/login">
+            <center>
+              <h1>STUDENTS LOGIN</h1>
+              <label for="username">Username / Email:</label><br>
+            <input type="text" id="username" name="email" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+            <button type="button" onclick="register()">Register</button>
+          </center>
+        </form>
+    </div>
+    <div class="feature">
+        <form method="POST" action="/login">
+          <center>
+            <h1>FACULTY LOGIN</h1>
+            <label for="username">Username / Email:</label><br>
+            <input type="text" id="username" name="email" required><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <button type="submit">Login</button>
+            <button type="button" onclick="register()">Register</button>
+            </center>
+        </form>
+    </div>
+  </section>
+</div>
+
+<footer>
+    <p>&copy; All rights reserved. VIT</p>
+</footer>
+</body>
+<script>
+    function register(){
+        location.href="signup";
+    }
+</script>
+</html>
