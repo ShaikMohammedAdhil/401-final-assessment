@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration Form</title>
+        <style>
+            body {
+                background-image: url("https://cdn.glitch.global/f64e76df-7a0d-46bb-be3f-dc263a5b6651/background-image.png?v=1706354990453");
+                background-repeat: no-repeat;
+            }
+            form {
+                width: 300px;
+                margin: 0 auto;
+                padding: 20px;
+                border: 1px solid #ccc;
+                box-shadow: 0px 0px 10px #ccc;
+            }
+            label {
+                display: block;
+                margin-top: 10px;
+            }
+            input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+                width: 100%;
+                padding: 10px;
+                margin-top: 5px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+            }
+            input[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 20px;
+            }
+            th, td {
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {background-color: #f2f2f2}
+            th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h1>REGISTRATION FORM</h1>
+            <form id="registration-form" method="POST" action="/signup">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" required><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+                <input type="checkbox" id="conditions" name="conditions" value="yes" required>
+                <label for="conditions">I Accept Terms & Conditions</label><br>
+                <input type="submit" value="Submit">
+            </form>
+        </center>
+    </body>
+    </html>
